@@ -6,12 +6,25 @@ const tl = new TimelineLite({
     paused: true
 });
 
-tl.to('.top_line', 0.5, {
-        width: '55%',
+tl.to('.tracklists_wrap', 0.5, {
+        autoAlpha: '0',
+
     })
-    .to('.bottom_line', 0.5, {
-        width: '55%',
-    }, '-=0.5')
+    .to('.video_wrap', 0.5, {
+        y: 100,
+    })
+    .to('.lines', 0.5, {
+        width: '0',
+        stagger: 0.1
+    })
+    .to('.lines', 0.5, {
+        autoAlpha: '0'
+    }, '-=0.1')
+
+    .to('.whilst_playing_wrap', 0.5, {
+        autoAlpha: '1',
+        y: 200
+    })
 
 
 playButton.addEventListener('click', () => {

@@ -15,19 +15,13 @@
 
 <body>
 
-    <!-- Top contents -->
-
-    <section class="top_contents">
-        <div class="menu_circle"></div>
-    </section>
-
 
     <!-- The Videos -->
     <div class="video_wrap">
-        <hr class="top_line">
+        <hr class="lines top_line">
 
         <video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="640" height="264"
-            poster="" data-setup="{}">
+            poster="/blackbg.png" data-setup="{}">
             <source src="./pandemc7.mp4" type="video/mp4" />
             <source src="./pandemc7.mp4" type="video/webm" />
             <p class="vjs-no-js">
@@ -36,18 +30,13 @@
                 <a href="https://videojs.com/html5-" target="_blank">supports HTML5 video</a>
             </p>
         </video>
-        <hr class="bottom_line">
+        <hr class="lines bottom_line">
     </div>
 
 
-    <div class="play_pause_buttons">
-        <button id="goBack"> <i class="material-icons">arrow_back</i>
-        </button>
-    </div>
 
 
     <div class="tracklists_wrap">
-        <p class="pause_text" style="color: #fff; text-align: center;">Click for video</p>
         <div class="tracklist_flexflowwrap">
             <ul class="tracklists">
                 <li class="tracks" id="videoPlay">1. Somewhere<a href="#" class="download_links">. . . . . .
@@ -73,6 +62,14 @@
             </ul>
         </div>
     </div>
+
+    <div class="whilst_playing_wrap">
+        <button class="purchase_buttons">Purchase Custom</button>
+        <button class="purchase_buttons" id="goBack"> <i class="material-icons">arrow_back</i></button>
+        <button class="purchase_buttons">Purchase Stems</button>
+    
+    </div>
+
 
 
 
